@@ -1,5 +1,6 @@
 # Test-project-1
-This is going to be a calculator app.
+This is going to be a project repo
 
-Built in: 
-Jupyter notebook!!!
+which will include a:
+
+1. calculator app built in Jupyter notebook!!!
