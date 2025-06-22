@@ -1,2 +1,5 @@
 # Test-project-1
-this is just a test for github
+This is going to be a calculator app.
+
+Built in: 
+Jupyter notebook!!!
