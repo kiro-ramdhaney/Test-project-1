@@ -1,9 +1,23 @@
 import random
 
+def game(ans):
+    randnum = random.randint(1,3)
+    a = ''
+    if ans == '1':
+        a = 'rock'
+    elif ans == '2':
+        a = 'paper'
+    elif ans == '3':
+        a = 'scissor'
+    
+    return a
+
+
+
 
 
 def main():
-    randnum = random.randint(1,3)
+    
     
     while True:
         print('Would you like to play a game?')
@@ -14,6 +28,20 @@ def main():
         response = input('Choose and option 1-3: ')
         if response == '1':
             print('Okay lets go')
+            print('Choose your weapon')
+            print('1. rock')
+            print('2. paper')
+            print('3. scissor')
+
+            ans = input('Choose and option 1-3: ')
+            
+
+            a = game(ans)
+            print(a)
+
+
+
+
         elif response == '2':
             print('sad boy noises')
         elif response == '3':
