@@ -1,7 +1,6 @@
 import random
 
-def game(ans):
-    randnum = random.randint(1,3)
+def numtohand(ans):
     a = ''
     if ans == '1':
         a = 'rock'
@@ -9,12 +8,36 @@ def game(ans):
         a = 'paper'
     elif ans == '3':
         a = 'scissor'
-    
-    return a
+    return(a)
 
+def genhand():
+    randnum = random.randint(1,3)
+    b=''
+    if randnum == 1:
+        b = 'rock'
+    elif randnum == 2:
+        b = 'paper'
+    elif randnum == 3:
+        b = 'scissor'
+    return(b)
 
-
-
+def logic(player,bot):
+    outcome = ''
+    if player == bot:
+        outcome = 'Its a tie'
+    elif player=='rock' and bot =='paper':
+        outcome = 'Player Loses!'
+    elif player=='rock' and bot =='scissor':
+        outcome = 'Player Wins!'
+    elif player=='paper' and bot =='rock':
+        outcome = 'Player Wins!'
+    elif player=='paper' and bot =='scissor':
+            outcome = 'Player Loses!'
+    elif player=='scissor' and bot =='paper':
+        outcome = 'Player Wins!'
+    elif player=='scissor' and bot =='rock':
+            outcome = 'Player Loses!'
+    return(outcome)
 
 def main():
     
